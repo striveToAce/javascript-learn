@@ -24,6 +24,10 @@ class Bird extends Animal{
     }
 }
 
+/*
+Polymorphism: The ability to call the same method on different objects and have each of them respond in their own way.
+Achieved through method overriding and method overloading.
+*/
 const dog = new Dog("Buddy");
 const bird = new Bird("Tweety");
 dog.makeSound();
