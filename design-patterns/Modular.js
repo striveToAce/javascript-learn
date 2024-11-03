@@ -14,3 +14,35 @@ const Module = (function () {
 })();
 
 Module.publicMethod();
+
+
+
+
+const CalculatorModule = (function() {
+  // Private variables and methods
+  let result = 0;
+
+  function add(value) {
+      result += value;
+  }
+
+  function subtract(value) {
+      result -= value;
+  }
+
+  function getResult() {
+      return result;
+  }
+
+  // Public API
+  return {
+      add,
+      subtract,
+      getResult
+  };
+})();
+
+// Usage
+CalculatorModule.add(10);
+CalculatorModule.subtract(5);
+console.log(CalculatorModule.getResult()); // Output: 5
